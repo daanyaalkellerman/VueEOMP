@@ -1,21 +1,35 @@
 <template lang="">
   <NavBar/>
-  <div>
-    
+  <div class="about">
+    <div class="flexy">
+      <div>
+        <p>{{$store.state.about[0]}}</p>
+      </div>
+      <div>
+        <img src="" loading="lazy">
+      </div>
+    </div>
   </div>
   <FooterView/>
 </template>
 <script>
-import NavBar from '../components/NavBar.vue'
-import FooterView from '../components/FooterView.vue'
+
 export default {
-  components: {
-    NavBar,
-    FooterView
-  
-  }
+
 }
 </script>
-<style lang="">
+<style scoped>
+.about{
+    display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  top: -50px;
+  position: relative;
+  min-height: 100vh;
+}
+.flexy{
+  display: flex;
+}
   
 </style>
