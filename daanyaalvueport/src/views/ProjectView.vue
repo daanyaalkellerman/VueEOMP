@@ -1,12 +1,11 @@
 <template lang="">
-     <NavBar/>
      <section class="projsect" data-aos="zoom-in" data-aos-offset="300" data-aos-duration="1000">
         <h1 class="projh2">Projects</h1>
-        <div class="projgrid">
+      <div class="projgrid">
           <div class="card-1">
             <div class="cards cee">
               <div class="imageProj">
-                <img src="" alt="" />
+                <img :src=$store.state.projects[0].image />
               </div>
               <div class="card-body mine">
                 <h2>{{$store.state.projects[0].name}}</h2>
@@ -21,7 +20,7 @@
           <div class="card-2">
             <div class="cards cee">
               <div class="imageProj">
-                <img src="" alt="" />
+                <img :src=$store.state.projects[1].image />
               </div>
               <div class="card-body mine">
                 <h2>{{$store.state.projects[1].name}}</h2>
@@ -36,7 +35,7 @@
           <div class="card-3">
             <div class="cards cee">
               <div class="imageProj">
-                <img src="" alt="" />
+                <img :src=$store.state.projects[2].image />
               </div>
               <div class="card-body mine">
                 <h2>{{$store.state.projects[2].name}}</h2>
@@ -51,7 +50,7 @@
           <div class="card-4">
             <div class="cards cee">
               <div class="imageProj">
-                <img src="" alt="" />
+                <img :src=$store.state.projects[3].image />
               </div>
               <div class="card-body mine">
                 <h2>{{$store.state.projects[3].name}}</h2>
@@ -63,10 +62,10 @@
               </div>
             </div>
           </div>
-          <div class="card-5">
+           <div class="card-5">
             <div class="cards cee">
               <div class="imageProj">
-                <img src="" alt="" />
+                <img :src=$store.state.projects[4].image />
               </div>
               <div class="card-body mine">
                 <h2>{{$store.state.projects[4].name}}</h2>
@@ -77,10 +76,24 @@
                 </div>
               </div>
             </div>
+           </div>
+           <div class="card-6">
+            <div class="cards cee">
+              <div class="imageProj">
+                <img :src=$store.state.projects[5].image />
+              </div>
+              <div class="card-body mine">
+                <h2>{{$store.state.projects[5].name}}</h2>
+                <p>{{$store.state.projects[5].description}}</p>
+                <div class="buttons">
+                  <a href="https://github.com/daanyaalkellerman/Urban-Kicks.git" target="_blank"><i class="fa fa-github"></i></a>
+                  <a href="https://urbnkicks.netlify.app/" target="_blank"><i class="fa fa-link"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+      </div>
       </section>
-  <FooterView/>
 </template>
 <script>
 
@@ -181,6 +194,13 @@ export default {
         height: 200px;
     }
     
+    .card-6 {
+        grid-area: card-6;
+        border: 2px solid rgb(5, 5, 5);
+        width: 400px;
+        height: 200px;
+    }
+    
     
     .imageProj{
         width: 100%;
@@ -225,7 +245,7 @@ export default {
         position: relative;
         color: rgb(177, 177, 177);
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(20px);
         transition: 0.5s all;
         z-index: 3;
     }
@@ -313,4 +333,42 @@ export default {
         top: 0;
         left: 0;
     }
+    @media (max-width: 480px) {
+    .card{
+      height: 300px;
+    }
+    .card .details {
+      position: absolute;
+      bottom: -150px;
+      left: 0;
+      padding: 10px;
+      width: 100%;
+      z-index: 2;
+      transition: 0.5s;
+      color: rgb(196, 195, 195);
+  }
+  .cards:hover {
+        background: rgb(196, 195, 195);
+        transition: 0.5s;
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.7);
+        transform: scale(1.0);
+        overflow: hidden;
+    }
+    .card-1{
+        width: 100%;
+    }
+    .card-2{
+        width: 100%;
+    }
+    .card-3{
+        width: 100%;
+    }
+    .card-4{
+        width: 100%;
+    }
+    .card-5{
+        width: 100%;
+    }
+ 
+}
 </style>

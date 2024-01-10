@@ -1,10 +1,8 @@
 <template>
-  <div id="app">
-     <NavBar/>
-     <router-view/>
-
-     <FooterView/>
-    </div>
+ 
+    <NavBar/>
+    <router-view/>
+    <FooterView/>
 </template>
 <script>
   import NavBar from './components/NavBar.vue'
@@ -22,6 +20,9 @@ computed:{
     getResume(){
       return this.$store.dispatch("getResume")
     },
+    getSkills(){
+      return this.$store.dispatch("getSkills")
+    },
     getProjects(){
       return this.$store.dispatch("getProjects")
     },
@@ -36,6 +37,7 @@ mounted(){
   this.getHome
   this.getAbout
   this.getResume
+  this.getSkills
   this.getProjects
   this.getTestimonials
   this.getContact
@@ -45,7 +47,6 @@ mounted(){
 
 <style>
 *{
-
   font-family: Outfit;
   margin: 0;
   padding: 0;
@@ -55,28 +56,14 @@ mounted(){
   background-image: url('https://drive.google.com/uc?id=1CmC7CWPQMsKj0WGK1a5G9O9i4otIlZtk');
   background-size: cover;
   background-position: center;
- overflow-x: hidden;
- overflow-y: hidden;
-}
-
-
-.navbar{
-  background-color: rgb(5, 5, 5);
-  color: rgb(196, 195, 195);
-  font-size: medium;
+  overflow-x: hidden;
   overflow-y: hidden;
-    }
-
-nav {
-  padding: 30px;
+  
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #D41028;
 }
 </style>

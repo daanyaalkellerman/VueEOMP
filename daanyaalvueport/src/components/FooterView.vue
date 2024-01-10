@@ -1,20 +1,43 @@
 <template lang="">
-    <div class="container-fluid">
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <div class="col-md-4 d-flex align-items-center">
-      <a href="/" class="mb-3 me-2 mb-md-0 text-decoration-none lh-1">
-        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-      </a>
-      <span class="mb-3 mb-md-0" style="color: white;">© 2022 Company, Inc</span>
-    </div>
+  <section>
+        <div class="container-fluid footer">
+          <footer
+            class="d-flex flex-wrap align-items-center my-1 mt-3"
+          >
+            <div class="col-md-4 d-flex align-items-center">
+              <span class="mb-3 mb-md-0 text-muted"
+                >Email:Kellermandaanyaal2@gmail.com <br />Phone: +27 68 007
+                1963</span
+              >
+              <span class="mb-3 mb-md-0 text-muted"></span>
+            </div>
 
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-    </ul>
-  </footer>
-</div>
+            <ul class="nav col-md-4 justify-content-center d-flex">
+              <li class="ms-3">
+                <a
+                  class="text-muted"
+                  href="https://instagram.com/daanyaalkellerman/" target="_blank"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
+              <li class="ms-3">
+                <a
+                  class="text-muted"
+                  href="https://github.com/daanyaalkellerman"
+                  target="_blank"><i class="fa fa-github"></i
+                ></a>
+              </li>
+              <li class="ms-3">
+                <a
+                  class="text-muted"
+                  href="https://youtube.com/@daanyaalkellerman" target="_blank"
+                  ><i class="fa fa-youtube-play"></i
+                ></a>
+              </li>
+            </ul>
+          </footer>
+        </div>
+      </section>
 </template>
 <script>
 export default {
@@ -29,9 +52,13 @@ export default {
     }
     .container-fluid{
       position: absolute;
-     
       text-align: center;
       background-color: black;
+    }
+    footer{
+      height: 53px;
+      position: sticky;
+    
     }
 
 </style>

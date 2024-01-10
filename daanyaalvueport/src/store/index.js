@@ -6,6 +6,7 @@ export default createStore({
     home: "",
     about: "",
     resume: [],
+    skills: [],
     projects: [],
     testimonials: [],
     contact: ""
@@ -23,6 +24,9 @@ export default createStore({
     },
     setResume(state , resume){
       state.resume = resume
+    },
+    setSkills(state , skills){
+      state.skills = skills
     },
     setProjects(state , projects ){
       state.projects = projects
@@ -51,6 +55,13 @@ export default createStore({
       axios.get('https://daanyaalkellerman.github.io/vueJSON1/')
       .then (res => {
         context.commit('setResume',res.data.resume)
+      })
+    },
+    getSkills (context){
+      axios.get('https://daanyaalkellerman.github.io/vueJSON1/')
+      .then (res => {
+        console.log(res.data.skills);
+        context.commit('setSkills',res.data.skills)
       })
     },
     getProjects (context){

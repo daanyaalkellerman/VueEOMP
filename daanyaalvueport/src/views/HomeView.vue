@@ -1,16 +1,36 @@
 <template>
   <div class="home">
-
+    <img src="https://iili.io/J76IyLg.md.jpg" alt="">
     <div class="words">
-      <h3 class="hello">{{$store.state.home[0].hello}}</h3>
-      <h1 class="name">{{$store.state.home[0].name}}</h1>
-      <h2 class="title">{{$store.state.home[0].title}}</h2>
+      <h3 class="hello">Hi My Name is</h3>
+      <h1 class="name">Daanyaal Kellerman</h1>
+      <h2 class="title">Aspiring Web Developer</h2>
     </div>
     <div class="buttons">
-      <button class="button">Learn More</button>
-      <button class="button">Download CV</button>
+      <router-link to="/about">
+        <button class="button"> Learn More 
+        <div id="box">
+        <div id="leftTop" class="corner"></div>
+        <div id="rightBottom" class="corner"></div>
+        <div id="rightTop" class="corner"></div>
+        <div id="leftBottom" class="corner"></div>
+        </div>
+        <span id="rightArrow" class="arrow"></span>
+        <span id="leftArrow" class="arrow"></span>
+  </button>
+</router-link>
+      
+      <button class="button">Download CV
+        <div id="box">
+        <div id="leftTop" class="corner"></div>
+        <div id="rightBottom" class="corner"></div>
+        <div id="rightTop" class="corner"></div>
+        <div id="leftBottom" class="corner"></div>
+        </div>
+        <span id="rightArrow" class="arrow"></span>
+        <span id="leftArrow" class="arrow"></span>
+      </button>
     </div>
-
   </div>
 
 </template>
@@ -24,34 +44,155 @@ export default {
 </script>
 <style scoped>
 .home{
-  display: flex;
+  display: flexbox;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  top: -50px;
+  align-items: center;
+  top: -40px;
   position: relative;
-  min-height: 100vh;
+  height: 90vh;  
 }
-.button{
- margin-top: 150px;
-  background-color:#0B0B0A ;
-  color: #B82D24;
-  border: 2px solid ;
+.words{
+  margin-bottom: 80px;
 }
-.button:hover{
-  color: #B82D35;
-  background-color:#1E1E1E ;
+.buttons{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: -150px;
+
+}
+button {
+  position: relative;
+  width: 11em;
+  height: 4em;
+  outline: none;
+  transition: 0.1s;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+#box {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border: 5px double #D41028;
+  box-shadow: inset 0px 0px 15px #B82D24;
+ 
+}
+.arrow {
+  position: absolute;
+  transition: 0.2s;
+  background-color: #B82D24;
+  top: 35%;
+  width: 11%;
+  height: 30%;
+}
+#leftArrow {
+  left: -13.5%;
+}
+#rightArrow {
+  left: 102%;
+}
+button:hover #rightArrow {
+  background-color: #D41028;
+  left: -15%;
+  animation: 0.6s ease-in-out both infinite alternate;
+}
+button:hover #leftArrow {
+  background-color: #D41028;
+  left: 103%;
+  animation: 0.6s ease-in-out both infinite alternate;
+}
+.corner {
+  position: absolute;
+  width: 4rem;
+  height: 3em;
+  background-color: #070606;
+  box-shadow: inset 1px 1px 8px #B82D24;
+  transform: scale(1) rotate(45deg);
+  transition: 0.2s;
+}
+#rightTop {
+  top: -1.5em;
+  left: 80%;
+}
+#leftTop {
+  top: -1.8em;
+  left: -3.8em;
+}
+#leftBottom {
+  top: 2.5em;
+  left: -2.15em;
+}
+#rightBottom {
+  top: 60%;
+  left: 90%;
+}
+button:hover #leftTop {
+  animation: 0.1s ease-in-out 0.05s both changeColor8,
+  0.2s linear 0.4s both lightEffect8;
+}
+button:hover #rightTop {
+  animation: 0.1s ease-in-out 0.15s both changeColor8,
+  0.2s linear 0.4s both lightEffect8;
+}
+button:hover #rightBottom {
+  animation: 0.1s ease-in-out 0.25s both changeColor8,
+  0.2s linear 0.4s both lightEffect8;
+}
+button:hover #leftBottom {
+  animation: 0.1s ease-in-out 0.35s both changeColor8,
+  0.2s linear 0.4s both lightEffect8;
+}
+button:hover .corner {
+  transform: scale(1.20) rotate(45deg);
+}
+button:hover #clip {
+  animation: 0.2s ease-in-out 0.55s both greenLight8;
+  --color: #1E1E1E;
+}
+@keyframes changeColor8 {
+  from {
+    background-color: #B82D24;
+  }
+  to {
+    background-color: #070606;
+  }
+}
+@keyframes lightEffect8 {
+  from {
+    box-shadow: 1px 1px 5px #070606;
+  }
+  to {
+    box-shadow: 0 0 2px #B82D24;
+  }
+}
+@keyframes greenLight8 {
+  from {
+  }
+  to {
+    box-shadow: inset 0px 0px 32px #D41028;
+  }
 }
 .hello{
   color: #fff
 }
 .name{
-  color: #B82D24;
+  color: #D41028;
   font-weight: 900;
   font-size: 70px;
 }
 .title{
   color: #fff;
+}
+img{
+  width: 20%;
+  margin-top: 80px;
 }
 
 </style>
