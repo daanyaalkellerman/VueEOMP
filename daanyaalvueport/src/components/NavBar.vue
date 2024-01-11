@@ -4,7 +4,7 @@
         <div class="container-fluid p-0 mx-3" id="navcon">
           <span class="navbar-brand mb-0 h1"
             ><img
-              src=""
+              src="https://iili.io/J7bJcRS.png"
               alt="kk"
           /></span>
           <button
@@ -77,22 +77,22 @@ export default {
 }
 </script>
 <style>
-  #nav {
+#nav {
   background-color: rgb(5, 5, 5);
   color: rgb(196, 195, 195);
   font-size: medium;
   overflow-x: hidden;
 }
 .offcanvas{
-    height: 60%;
+    height: 50%;
 }
 
 #offcanvas {
   background-color: rgb(5, 5, 5);
-  color: rgb(179, 1, 1);
+  color: #D41028;
 }
 #offcanvasNavbar {
-  background-color: rgb(179, 1, 1);
+  background-color: #D41028;
   color: rgb(5, 5, 5);
 }
 #burger {
@@ -100,12 +100,31 @@ export default {
 }
 
 #but {
-  background-color: rgb(179, 1, 1);
+  background-color: #B82D24;
   color: rgb(5, 5, 5);
 }
 #but:hover {
-  background-color: rgb(255, 0, 0);
+  background-color: #B82D24;
   border: 1px solid;
   border-color: rgb(255, 255, 255);
+}
+#navcon span [alt="kk"] {
+  width: 100px;
+  height: 50px;
+}
+.icons a {
+  padding: 0;
+  font-size: 20px;
+  color: rgb(196, 195, 195);
+}
+
+.icons a:hover {
+  color: rgb(255, 0, 0);  
+}
+
+.nav-item a{
+  width: 10vw;
+  height: 5vh;
+  text-align: center;
 }
 </style>

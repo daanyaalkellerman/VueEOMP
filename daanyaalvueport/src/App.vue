@@ -2,14 +2,16 @@
  
     <NavBar/>
     <router-view/>
+    <SpinnerView/>
     <FooterView/>
 </template>
 <script>
   import NavBar from './components/NavBar.vue'
   import FooterView from './components/FooterView.vue'
+  import SpinnerView from './components/SpinnerView.vue'
 export default{
 
-components: {NavBar,FooterView},
+components: {NavBar,SpinnerView,FooterView},
 computed:{
     getHome(){
       return this.$store.dispatch("getHome")
@@ -64,6 +66,30 @@ mounted(){
 
 
 nav a.router-link-exact-active {
+  color: #D41028;
+}
+
+.footic{
+      color: white;
+    }
+    .footer{
+      position: absolute;
+      text-align: center;
+      background-color: black;
+
+    }
+footer{
+    justify-content: space-between !important;
+}
+
+.footer-bar {
+    margin: 0px;
+    justify-content: space-around;
+}
+.footinfo {
+    text-align: left;
+}
+.icon{
   color: #D41028;
 }
 </style>

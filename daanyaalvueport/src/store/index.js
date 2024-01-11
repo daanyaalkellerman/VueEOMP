@@ -40,47 +40,76 @@ export default createStore({
   },
   actions: {
     getHome (context){
-      axios.get('https://daanyaalkellerman.github.io/vueJSON1/')
-      .then (res => {
-        context.commit('setHome',res.data.home)
-      })
+      try {
+        axios.get('https://daanyaalkellerman.github.io/vueJSON1/')
+        .then (res => {
+          context.commit('setHome',res.data.home)
+        })
+      } catch (error) {
+        alert('cannot retrieve data',error)
+      }
     },
     getAbout (context){
-      axios.get('https://daanyaalkellerman.github.io/vueJSON1/')
-      .then (res => {
-        context.commit('setAbout',res.data.about)
-      })
+      try {
+        axios.get('https://daanyaalkellerman.github.io/vueJSON1/')
+        .then (res => {
+          context.commit('setAbout',res.data.about)
+        })
+      } catch (error) {
+        alert('cannot retrieve data',error)
+      }
     },
     getResume (context){
-      axios.get('https://daanyaalkellerman.github.io/vueJSON1/')
-      .then (res => {
-        context.commit('setResume',res.data.resume)
-      })
+      try {
+        axios.get('https://daanyaalkellerman.github.io/vueJSON1/')
+        .then (res => {
+          context.commit('setResume',res.data.resume)
+        })
+      } catch (error) {
+        alert('cannot retrieve data',error)
+      }
     },
     getSkills (context){
-      axios.get('https://daanyaalkellerman.github.io/vueJSON1/')
-      .then (res => {
-        console.log(res.data.skills);
-        context.commit('setSkills',res.data.skills)
-      })
+      try {
+        axios.get('https://daanyaalkellerman.github.io/vueJSON1/')
+        .then (res => {
+          console.log(res.data.skills);
+          context.commit('setSkills',res.data.skills)
+        })      
+      } catch (error) {
+        alert('cannot retrieve data',error)
+      }
     },
     getProjects (context){
-      axios.get('https://daanyaalkellerman.github.io/vueJSON1/')
-      .then (res => {
-        context.commit('setProjects',res.data.projects)
-      })
+      try {
+        axios.get('https://daanyaalkellerman.github.io/vueJSON1/')
+        .then (res => {
+          context.commit('setProjects',res.data.projects)
+        })    
+      } catch (error) {
+        alert('cannot retrieve data',error)
+      }
     },
     getTestimonials (context){
-      axios.get('https://daanyaalkellerman.github.io/vueJSON1/')
-      .then (res => {
-        context.commit('setTestimonials',res.data.testimonials)
-      })
+      try {
+        
+        axios.get('https://daanyaalkellerman.github.io/vueJSON1/')
+        .then (res => {
+          context.commit('setTestimonials',res.data.testimonials)
+        })
+      } catch (error) {
+        alert('cannot retrieve data',error)
+      }
     },
     getContact (context){
-      axios.get('https://daanyaalkellerman.github.io/vueJSON1/')
-      .then (res => {
-        context.commit('setContact',res.data.contact)
-      })
+      try {
+        axios.get('https://daanyaalkellerman.github.io/vueJSON1/')
+        .then (res => {
+          context.commit('setContact',res.data.contact)
+        })       
+      } catch (error) {
+        alert('cannot retrieve data',error)
+      }
     },
 
     // getData(context){

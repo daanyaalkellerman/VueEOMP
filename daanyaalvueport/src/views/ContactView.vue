@@ -85,7 +85,7 @@ export default {
     line-height: 1.5;
     color: rgb(196, 195, 195);
     text-align: left;
-    background-color: rgb(5, 5, 5);
+    background-color: transparent;
     padding: 30px;
     padding-bottom: 10px;
     border-radius: 0.25rem;
@@ -153,9 +153,6 @@ label.contact-label {
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     background-color: transparent;
     border: 1px solid transparent;

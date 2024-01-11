@@ -1,99 +1,105 @@
 <template lang="">
-     <section class="projsect" data-aos="zoom-in" data-aos-offset="300" data-aos-duration="1000">
-        <h1 class="projh2">Projects</h1>
-      <div class="projgrid">
-          <div class="card-1">
-            <div class="cards cee">
-              <div class="imageProj">
-                <img :src=$store.state.projects[0].image />
-              </div>
-              <div class="card-body mine">
-                <h2>{{$store.state.projects[0].name}}</h2>
-                <p>{{$store.state.projects[0].description}}</p>
-                <div class="buttons">
-                  <a href="https://github.com/daanyaalkellerman/Urban-Kicks.git" target="_blank"><i class="fa fa-github"></i></a>
-                  <a href="https://urbnkicks.netlify.app/" target="_blank"><i class="fa fa-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card-2">
-            <div class="cards cee">
-              <div class="imageProj">
-                <img :src=$store.state.projects[1].image />
-              </div>
-              <div class="card-body mine">
-                <h2>{{$store.state.projects[1].name}}</h2>
-                <p>{{$store.state.projects[1].description}}</p>
-                <div class="buttons">
-                  <a href="https://github.com/daanyaalkellerman/RWC.git" target="_blank"><i class="fa fa-github"></i></a>
-                  <a href="https://rugbywc.netlify.app/" target="_blank"><i class="fa fa-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card-3">
-            <div class="cards cee">
-              <div class="imageProj">
-                <img :src=$store.state.projects[2].image />
-              </div>
-              <div class="card-body mine">
-                <h2>{{$store.state.projects[2].name}}</h2>
-                <p>{{$store.state.projects[2].description}}</p>
-                <div class="buttons">
-                  <a href="https://github.com/daanyaalkellerman/calculator.git" target="_blank"><i class="fa fa-github"></i></a>
-                  <a href="https://callmelator.netlify.app/" target="_blank"><i class="fa fa-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card-4">
-            <div class="cards cee">
-              <div class="imageProj">
-                <img :src=$store.state.projects[3].image />
-              </div>
-              <div class="card-body mine">
-                <h2>{{$store.state.projects[3].name}}</h2>
-                <p>{{$store.state.projects[3].description}}</p>
-                <div class="buttons">
-                  <a href="https://github.com/daanyaalkellerman/e-commerce.git" target="_blank"><i class="fa fa-github"></i></a>
-                  <a href="https://animooshies.netlify.app/" target="_blank"><i class="fa fa-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-           <div class="card-5">
-            <div class="cards cee">
-              <div class="imageProj">
-                <img :src=$store.state.projects[4].image />
-              </div>
-              <div class="card-body mine">
-                <h2>{{$store.state.projects[4].name}}</h2>
-                <p>{{$store.state.projects[4].description}}</p>
-                <div class="buttons">
-                  <a href="" target="_blank"> <i class="fa fa-github"></i></a>
-                  <a href="https://justflix.netlify.app/" target="_blank"><i class="fa fa-link"></i></a>
-                </div>
-              </div>
-            </div>
+  <div v-if="$store.state.projects.length > 0">
+
+    <section class="projsect">
+       <h1 class="projh2">My Projects</h1>
+     <div class="projgrid" >
+         <div class="card-2" v-for="project in $store.state.projects" :key="project">
+           <div class="cards cee">
+             <div class="imageProj">
+               <img :src=project.image />
+             </div>
+             <div class="card-body mine">
+               <h2>{{project.name}}</h2>
+               <p>{{project.description}}</p>
+               <div class="buttons">
+                 <a href="https://github.com/daanyaalkellerman/Urban-Kicks.git" target="_blank"><i class="fa fa-github"></i></a>
+                 <a href="https://urbnkicks.netlify.app/" target="_blank"><i class="fa fa-link"></i></a>
+               </div>
+             </div>
            </div>
-           <div class="card-6">
-            <div class="cards cee">
-              <div class="imageProj">
-                <img :src=$store.state.projects[5].image />
-              </div>
-              <div class="card-body mine">
-                <h2>{{$store.state.projects[5].name}}</h2>
-                <p>{{$store.state.projects[5].description}}</p>
-                <div class="buttons">
-                  <a href="https://github.com/daanyaalkellerman/Urban-Kicks.git" target="_blank"><i class="fa fa-github"></i></a>
-                  <a href="https://urbnkicks.netlify.app/" target="_blank"><i class="fa fa-link"></i></a>
-                </div>
-              </div>
-            </div>
+         </div>
+         <!-- <div class="card-2">
+           <div class="cards cee">
+             <div class="imageProj">
+               <img :src=$store.state.projects[1].image />
+             </div>
+             <div class="card-body mine">
+               <h2>{{$store.state.projects[1].name}}</h2>
+               <p>{{$store.state.projects[1].description}}</p>
+               <div class="buttons">
+                 <a href="https://github.com/daanyaalkellerman/RWC.git" target="_blank"><i class="fa fa-github"></i></a>
+                 <a href="https://rugbywc.netlify.app/" target="_blank"><i class="fa fa-link"></i></a>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="card-3">
+           <div class="cards cee">
+             <div class="imageProj">
+               <img :src=$store.state.projects[2].image />
+             </div>
+             <div class="card-body mine">
+               <h2>{{$store.state.projects[2].name}}</h2>
+               <p>{{$store.state.projects[2].description}}</p>
+               <div class="buttons">
+                 <a href="https://github.com/daanyaalkellerman/calculator.git" target="_blank"><i class="fa fa-github"></i></a>
+                 <a href="https://callmelator.netlify.app/" target="_blank"><i class="fa fa-link"></i></a>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="card-4">
+           <div class="cards cee">
+             <div class="imageProj">
+               <img :src=$store.state.projects[3].image />
+             </div>
+             <div class="card-body mine">
+               <h2>{{$store.state.projects[3].name}}</h2>
+               <p>{{$store.state.projects[3].description}}</p>
+               <div class="buttons">
+                 <a href="https://github.com/daanyaalkellerman/e-commerce.git" target="_blank"><i class="fa fa-github"></i></a>
+                 <a href="https://animooshies.netlify.app/" target="_blank"><i class="fa fa-link"></i></a>
+               </div>
+             </div>
+           </div>
+         </div>
+          <div class="card-5">
+           <div class="cards cee">
+             <div class="imageProj">
+               <img :src=$store.state.projects[4].image />
+             </div>
+             <div class="card-body mine">
+               <h2>{{$store.state.projects[4].name}}</h2>
+               <p>{{$store.state.projects[4].description}}</p>
+               <div class="buttons">
+                 <a href="" target="_blank"> <i class="fa fa-github"></i></a>
+                 <a href="https://justflix.netlify.app/" target="_blank"><i class="fa fa-link"></i></a>
+               </div>
+             </div>
+           </div>
           </div>
-      </div>
-      </section>
+          <div class="card-6">
+           <div class="cards cee">
+             <div class="imageProj">
+               <img :src=$store.state.projects[5].image />
+             </div>
+             <div class="card-body mine">
+               <h2>{{$store.state.projects[5].name}}</h2>
+               <p>{{$store.state.projects[5].description}}</p>
+               <div class="buttons">
+                 <a href="https://github.com/daanyaalkellerman/Urban-Kicks.git" target="_blank"><i class="fa fa-github"></i></a>
+                 <a href="https://urbnkicks.netlify.app/" target="_blank"><i class="fa fa-link"></i></a>
+               </div>
+             </div>
+           </div>
+         </div> -->
+     </div>
+     </section>
+  </div>
+  <div v-else>
+    <SpinnerView/>
+  </div>
 </template>
 <script>
 
@@ -102,14 +108,17 @@ export default {
 }
 </script>
 <style scoped>
-    
-.projsect {
-    margin-top: -5%;
-}
+    .projsect{
+      text-align: center;
+      top: 50px;
+      position: relative;
+    }
+
 .projh2 {
-    margin-top: 10%;
-    color: rgb(179, 1, 1);
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom:1.8%;
+    color: #D41028;
+    text-shadow: 2px 1px 1px #070606;
     font-size: 50px;
 }
 #proj {
@@ -125,7 +134,7 @@ export default {
     position: relative;
     left: 0;
     bottom: -150px;
-    color: rgb(5, 5, 5);
+    color: #070606;
 }
 
 #projrow {
@@ -136,7 +145,7 @@ export default {
     flex-wrap: wrap;
 }
 .image {
-    background: rgb(179, 1, 1);
+    background: #D41028;
     position: relative;
     width: 100%;
     height: 100%;

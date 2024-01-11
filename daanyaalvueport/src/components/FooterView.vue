@@ -6,30 +6,28 @@
           >
             <div class="col-md-4 d-flex align-items-center">
               <span class="mb-3 mb-md-0 text-muted"
-                >Email:Kellermandaanyaal2@gmail.com <br />Phone: +27 68 007
-                1963</span
-              >
-              <span class="mb-3 mb-md-0 text-muted"></span>
+                >@Company</span>
+              <span class=" mb-md-0 text-muted"></span>
             </div>
 
-            <ul class="nav col-md-4 justify-content-center d-flex">
+            <ul class="nav col-md-4 justify-content-center d-flex footic">
               <li class="ms-3">
                 <a
-                  class="text-muted"
+                  class="icon"
                   href="https://instagram.com/daanyaalkellerman/" target="_blank"
                   ><i class="fa fa-instagram"></i
                 ></a>
               </li>
               <li class="ms-3">
                 <a
-                  class="text-muted"
+                  class="icon"
                   href="https://github.com/daanyaalkellerman"
                   target="_blank"><i class="fa fa-github"></i
                 ></a>
               </li>
               <li class="ms-3">
                 <a
-                  class="text-muted"
+                  class="icon"
                   href="https://youtube.com/@daanyaalkellerman" target="_blank"
                   ><i class="fa fa-youtube-play"></i
                 ></a>
@@ -46,19 +44,7 @@ export default {
     // }
 }
 </script>
-<style scoped>
-    .nav{
-      color: white;
-    }
-    .container-fluid{
-      position: absolute;
-      text-align: center;
-      background-color: black;
-    }
-    footer{
-      height: 53px;
-      position: sticky;
-    
-    }
+<style>
+  
 
 </style>

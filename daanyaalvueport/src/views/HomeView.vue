@@ -1,8 +1,8 @@
 <template>
-  <div class="home">
+  <div class="home" >
     <img src="https://iili.io/J76IyLg.md.jpg" alt="">
     <div class="words">
-      <h3 class="hello">Hi My Name is</h3>
+      <h3 class="hello my-2">Hi My Name is</h3>
       <h1 class="name">Daanyaal Kellerman</h1>
       <h2 class="title">Aspiring Web Developer</h2>
     </div>
@@ -49,12 +49,13 @@ export default {
   text-align: center;
   justify-content: center;
   align-items: center;
-  top: -40px;
   position: relative;
-  height: 90vh;  
+  height: 90.6vh;
+
+
 }
 .words{
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 .buttons{
   display: flex;
@@ -70,7 +71,7 @@ button {
   transition: 0.1s;
   background-color: transparent;
   border: none;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
   color: #fff;
 }
@@ -153,7 +154,7 @@ button:hover .corner {
   transform: scale(1.20) rotate(45deg);
 }
 button:hover #clip {
-  animation: 0.2s ease-in-out 0.55s both greenLight8;
+  animation: 0.2s ease-in-out 0.55s both blackLight8;
   --color: #1E1E1E;
 }
 @keyframes changeColor8 {
@@ -172,7 +173,7 @@ button:hover #clip {
     box-shadow: 0 0 2px #B82D24;
   }
 }
-@keyframes greenLight8 {
+@keyframes blackLight8 {
   from {
   }
   to {
@@ -191,8 +192,90 @@ button:hover #clip {
   color: #fff;
 }
 img{
-  width: 20%;
+  width: 20vw;
   margin-top: 80px;
+  border: 5px double #D41028;
 }
 
+@media (width <= 480px) {
+  img{
+  width: 50%;
+  margin-top: 100px;
+  border: 5px double #D41028;
+}
+.hello{
+  font-size: 20px;
+}
+button {
+  position: relative;
+  width: 8em;
+  height: 3em;
+  outline: none;
+  transition: 0.1s;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+.name{
+  font-size: 40px;
+}
+.title{
+  font-size:20px;
+}
+.home{
+  display: flexbox;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  top: -30px;
+  position: relative;
+  height: 86.9vh;  
+  width: 100vw;
+}
+}
+
+@media (width: 1024px) {
+  img{
+  width: 30%;
+  margin-top: 100px;
+  border: 5px double #D41028;
+}
+.hello{
+  font-size: 20px;
+}
+.name{
+  font-size: 60px;
+}
+.title{
+  font-size:20px;
+}
+.home{
+  display: flexbox;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  top: -10px;
+  position: relative;
+  height: 92.3vh;  
+}
+button {
+  position: relative;
+  width: 11em;
+  height: 5em;
+  outline: none;
+  transition: 0.1s;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  color: #fff;
+  
+}
+.words{
+  margin-bottom: 40px;
+}
+}
 </style>
