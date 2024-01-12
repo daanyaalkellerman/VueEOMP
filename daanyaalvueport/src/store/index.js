@@ -16,6 +16,7 @@ export default createStore({
 
   },
   mutations: {
+    //sets the state array
     setHome(state , data){
       state.home = data
     },
@@ -39,7 +40,9 @@ export default createStore({
     }
   },
   actions: {
+    //fetchs the json file
     getHome (context){
+      //error handling
       try {
         axios.get('https://daanyaalkellerman.github.io/vueJSON1/')
         .then (res => {

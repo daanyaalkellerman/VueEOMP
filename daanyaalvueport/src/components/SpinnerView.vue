@@ -1,158 +1,177 @@
 <template lang="">
-   <div class="loader">
-<div class="loader-square"></div>
-<div class="loader-square"></div>
-<div class="loader-square"></div>
-<div class="loader-square"></div>
-<div class="loader-square"></div>
-<div class="loader-square"></div>
-<div class="loader-square"></div>
+<div class="spinner center" v-if="loader">
+    <div class="spinner-blade"></div>
+    <div class="spinner-blade"></div>
+    <div class="spinner-blade"></div>
+    <div class="spinner-blade"></div>
+    <div class="spinner-blade"></div>
+    <div class="spinner-blade"></div>
+    <div class="spinner-blade"></div>
+    <div class="spinner-blade"></div>
+    <div class="spinner-blade"></div>
+    <div class="spinner-blade"></div>
+    <div class="spinner-blade"></div>
+    <div class="spinner-blade"></div>
 </div>
 </template>
 <script>
 export default {
-    
+   data() {
+      return {
+        loader: true, // Initially set loading to true
+        data: [], // Your data array
+      };
+    },
+    mounted() {
+      // Fetch data from the provided URL
+      fetch('https://daanyaalkellerman.github.io/vueJSON1/')
+        .then(response => response.json())
+        .then(data => {
+          this.data = data;
+          this.loader = false;
+        })
+        .catch(error => {
+          console.error('Error fetching data:', error);
+          this.loader = false;
+        });
+    },
 }
 </script>
 <style scoped>
-    @keyframes square-animation {
- 0% {
+.spinner {
+  font-size: 28px;
+  position: relative;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+
+.spinner.center {
+  position: absolute;
   left: 0;
+  right: 0;
   top: 0;
- }
-
- 10.5% {
-  left: 0;
-  top: 0;
- }
-
- 12.5% {
-  left: 32px;
-  top: 0;
- }
-
- 23% {
-  left: 32px;
-  top: 0;
- }
-
- 25% {
-  left: 64px;
-  top: 0;
- }
-
- 35.5% {
-  left: 64px;
-  top: 0;
- }
-
- 37.5% {
-  left: 64px;
-  top: 32px;
- }
-
- 48% {
-  left: 64px;
-  top: 32px;
- }
-
- 50% {
-  left: 32px;
-  top: 32px;
- }
-
- 60.5% {
-  left: 32px;
-  top: 32px;
- }
-
- 62.5% {
-  left: 32px;
-  top: 64px;
- }
-
- 73% {
-  left: 32px;
-  top: 64px;
- }
-
- 75% {
-  left: 0;
-  top: 64px;
- }
-
- 85.5% {
-  left: 0;
-  top: 64px;
- }
-
- 87.5% {
-  left: 0;
-  top: 32px;
- }
-
- 98% {
-  left: 0;
-  top: 32px;
- }
-
- 100% {
-  left: 0;
-  top: 0;
- }
+  bottom: 0;
+  margin: auto;
 }
 
-.loader {
- position: relative;
- width: 96px;
- height: 96px;
- transform: rotate(45deg);
+.spinner .spinner-blade {
+  position: absolute;
+  left: 0.4629em;
+  bottom: 0;
+  width: 0.074em;
+  height: 0.2777em;
+  border-radius: 0.0555em;
+  background-color: transparent;
+  -webkit-transform-origin: center -0.2222em;
+  -ms-transform-origin: center -0.2222em;
+  transform-origin: center -0.2222em;
+  animation: spinner-fade9234 1s infinite linear;
 }
 
-.loader-square {
- position: absolute;
- top: 0;
- left: 0;
- width: 28px;
- height: 28px;
- margin: 2px;
- border-radius: 0px;
- background: white;
- background-size: cover;
- background-position: center;
- background-attachment: fixed;
- animation: square-animation 10s ease-in-out infinite both;
+.spinner .spinner-blade:nth-child(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
-.loader-square:nth-of-type(0) {
- animation-delay: 0s;
+.spinner .spinner-blade:nth-child(2) {
+  -webkit-animation-delay: 0.083s;
+  animation-delay: 0.083s;
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
 }
 
-.loader-square:nth-of-type(1) {
- animation-delay: -1.4285714286s;
+.spinner .spinner-blade:nth-child(3) {
+  -webkit-animation-delay: 0.166s;
+  animation-delay: 0.166s;
+  -webkit-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  transform: rotate(60deg);
 }
 
-.loader-square:nth-of-type(2) {
- animation-delay: -2.8571428571s;
+.spinner .spinner-blade:nth-child(4) {
+  -webkit-animation-delay: 0.249s;
+  animation-delay: 0.249s;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
-.loader-square:nth-of-type(3) {
- animation-delay: -4.2857142857s;
+.spinner .spinner-blade:nth-child(5) {
+  -webkit-animation-delay: 0.332s;
+  animation-delay: 0.332s;
+  -webkit-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  transform: rotate(120deg);
 }
 
-.loader-square:nth-of-type(4) {
- animation-delay: -5.7142857143s;
+.spinner .spinner-blade:nth-child(6) {
+  -webkit-animation-delay: 0.415s;
+  animation-delay: 0.415s;
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  transform: rotate(150deg);
 }
 
-.loader-square:nth-of-type(5) {
- animation-delay: -7.1428571429s;
+.spinner .spinner-blade:nth-child(7) {
+  -webkit-animation-delay: 0.498s;
+  animation-delay: 0.498s;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
-.loader-square:nth-of-type(6) {
- animation-delay: -8.5714285714s;
+.spinner .spinner-blade:nth-child(8) {
+  -webkit-animation-delay: 0.581s;
+  animation-delay: 0.581s;
+  -webkit-transform: rotate(210deg);
+  -ms-transform: rotate(210deg);
+  transform: rotate(210deg);
 }
 
-.loader-square:nth-of-type(7) {
- animation-delay: -10s;
+.spinner .spinner-blade:nth-child(9) {
+  -webkit-animation-delay: 0.664s;
+  animation-delay: 0.664s;
+  -webkit-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+
+.spinner .spinner-blade:nth-child(10) {
+  -webkit-animation-delay: 0.747s;
+  animation-delay: 0.747s;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.spinner .spinner-blade:nth-child(11) {
+  -webkit-animation-delay: 0.83s;
+  animation-delay: 0.83s;
+  -webkit-transform: rotate(300deg);
+  -ms-transform: rotate(300deg);
+  transform: rotate(300deg);
+}
+
+.spinner .spinner-blade:nth-child(12) {
+  -webkit-animation-delay: 0.913s;
+  animation-delay: 0.913s;
+  -webkit-transform: rotate(330deg);
+  -ms-transform: rotate(330deg);
+  transform: rotate(330deg);
+}
+
+@keyframes spinner-fade9234 {
+  0% {
+    background-color: #69717d;
+  }
+
+  100% {
+    background-color: transparent;
+  }
 }
 </style>

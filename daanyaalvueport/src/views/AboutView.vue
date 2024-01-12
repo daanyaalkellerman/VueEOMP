@@ -1,13 +1,13 @@
 <template lang="">
   
-      <section class="about container-md"  id="About">
+      <section class="about container-md text-uppercase fw-bold-semi"  id="About">
     <div class="pic">
       <div class="animation"></div>
       <img src="https://iili.io/J76IyLg.md.jpg" class="aboutpic">
     </div>
       
       <div>
-              <h2 class="aboutH">About Me</h2>
+              <h2 class="aboutH" style=" text-shadow: 2px 1px 1px #070606;">About Me</h2>
               <p>HEY!! I'm Daanyaal Kellerman. I'm an aspiring Fullstack Web
               Developer. I enjoy bringing out the creative talent of other's and
               distributing the knowledge that i learn along my journey. I tend
@@ -36,7 +36,7 @@ export default {
             justify-content: flex-start;
             align-items: center;      
             margin-top: 10%;
-            margin-bottom: 15%;
+            margin-bottom: 10%;
           }
   
         .aboutpic{
@@ -86,7 +86,7 @@ overflow: hidden;
     content: '';
     position: absolute;
     inset: 7px;
-    background: rgb(26, 26, 26);
+    background: #070606;
 }
 .about h2{
             color: #D41028;
@@ -97,7 +97,7 @@ overflow: hidden;
             padding-left: 8% ;
           }
   .about p{
-            color: rgb(220, 220, 220);
+            color: #fff;
             padding-left: 8%;
           }
 

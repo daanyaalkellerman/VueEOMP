@@ -19,8 +19,7 @@
         <span id="leftArrow" class="arrow"></span>
   </button>
 </router-link>
-      
-      <button class="button">Download CV
+      <a href="https://drive.google.com/file/d/1HrBFFPRAMOTLIYn-Iiy9-CgwVAnozal0/view?usp=drive_link" target="_blank"> <button class="button">Download CV
         <div id="box">
         <div id="leftTop" class="corner"></div>
         <div id="rightBottom" class="corner"></div>
@@ -29,7 +28,8 @@
         </div>
         <span id="rightArrow" class="arrow"></span>
         <span id="leftArrow" class="arrow"></span>
-      </button>
+      </button></a>
+     
     </div>
   </div>
 
@@ -50,9 +50,7 @@ export default {
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 90.6vh;
-
-
+  height: 100vh;
 }
 .words{
   margin-bottom: 40px;
@@ -187,6 +185,7 @@ button:hover #clip {
   color: #D41028;
   font-weight: 900;
   font-size: 70px;
+  text-shadow: 2px 2px 1px #070606;
 }
 .title{
   color: #fff;
@@ -232,15 +231,15 @@ button {
   align-items: center;
   top: -30px;
   position: relative;
-  height: 86.9vh;  
+  height: 92.1vh;  
   width: 100vw;
 }
 }
 
 @media (width: 1024px) {
   img{
-  width: 30%;
-  margin-top: 100px;
+  width: 25%;
+  margin-top: 80px;
   border: 5px double #D41028;
 }
 .hello{
@@ -260,7 +259,8 @@ button {
   align-items: center;
   top: -10px;
   position: relative;
-  height: 92.3vh;  
+  height: 94.5vh;  
+
 }
 button {
   position: relative;
@@ -277,5 +277,18 @@ button {
 .words{
   margin-bottom: 40px;
 }
+}
+
+@media (width:768px) {
+  .home{
+  display: flexbox;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 94.5vh;
+}
+  
 }
 </style>

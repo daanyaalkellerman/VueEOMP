@@ -1,8 +1,6 @@
 <template lang="">
-  <div v-if="$store.state.projects.length > 0">
-
-    <section class="projsect">
-       <h1 class="projh2">My Projects</h1>
+    <section class="projsect " v-if="$store.state.projects.length > 0">
+       <h1 class="projh2 text-uppercase fw-bold-semi">My Projects</h1>
      <div class="projgrid" >
          <div class="card-2" v-for="project in $store.state.projects" :key="project">
            <div class="cards cee">
@@ -13,8 +11,8 @@
                <h2>{{project.name}}</h2>
                <p>{{project.description}}</p>
                <div class="buttons">
-                 <a href="https://github.com/daanyaalkellerman/Urban-Kicks.git" target="_blank"><i class="fa fa-github"></i></a>
-                 <a href="https://urbnkicks.netlify.app/" target="_blank"><i class="fa fa-link"></i></a>
+                 <a :href=project.gitHub target="_blank" class="icon"><i class="fa fa-github"></i></a>
+                 <a :href=project.netlify target="_blank" class="icon"><i class="fa fa-link"></i></a>
                </div>
              </div>
            </div>
@@ -96,7 +94,6 @@
          </div> -->
      </div>
      </section>
-  </div>
   <div v-else>
     <SpinnerView/>
   </div>
@@ -108,14 +105,17 @@ export default {
 }
 </script>
 <style scoped>
+.icon{
+  color: #070606;
+}
     .projsect{
       text-align: center;
-      top: 50px;
+      top: 70px;
       position: relative;
+      height: 100vh;
     }
 
 .projh2 {
-    margin-top: 5%;
     margin-bottom:1.8%;
     color: #D41028;
     text-shadow: 2px 1px 1px #070606;
@@ -170,42 +170,42 @@ export default {
 
 .card-1 {
     grid-area: card-1;
-    border: 2px solid rgb(5, 5, 5);
+    border: 2px solid #070606;
     width: 400px;
     height: 200px;
 }
 
 .card-2 {
     grid-area: card-2;
-    border: 2px solid rgb(5, 5, 5);
+    border: 2px solid #070606;
     width: 400px;
     height: 200px;
   }
   
   .card-3 {
     grid-area: card-3;
-    border: 2px solid rgb(5, 5, 5);
+    border: 2px solid rgb#070606;
     width: 400px;
     height: 200px;
   }
   
   .card-4 {
       grid-area: card-4;
-      border: 2px solid rgb(5, 5, 5);
+      border: 2px solid #070606;
       width: 400px;
       height: 200px;
     }
     
     .card-5 {
         grid-area: card-5;
-        border: 2px solid rgb(5, 5, 5);
+        border: 2px solid #070606;
         width: 400px;
         height: 200px;
     }
     
     .card-6 {
         grid-area: card-6;
-        border: 2px solid rgb(5, 5, 5);
+        border: 2px solid #070606;
         width: 400px;
         height: 200px;
     }
@@ -223,11 +223,11 @@ export default {
     .cards {
         width: 100%;
         height: 100%;
-        background: rgb(196, 195, 195);
+        background: #fff;
         position: relative;
         display: flex;
         align-items: flex-end;
-        box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 7px 10px rgba(7, 6, 6, 0.5);
         transition: 0.5s ease-in-out;
         border-radius: 0;
     }
@@ -240,7 +240,7 @@ export default {
       display: block;
       width: 100%;
       height: 100%;
-      background: linear-gradient(to bottom, rgb(5, 5, 5), rgb(179, 1, 1));
+      background: linear-gradient(to bottom, #070606, #D41028);
       z-index: 2;
       transition: 0.5s all;
       opacity: 0;
@@ -252,7 +252,7 @@ export default {
     }
     .cards .mine {
         position: relative;
-        color: rgb(177, 177, 177);
+        color: #fff;
         opacity: 0;
         transform: translateY(20px);
         transition: 0.5s all;
@@ -276,17 +276,17 @@ export default {
         height: 2rem;
         height: 2.5rem;
       background-color: transparent;
-      color: rgb(255, 255, 255);
-      border: rgb(255, 255, 255) solid 3px;
+      color: #fff;
+      border: #fff solid 3px;
       text-decoration: none;
-      color: rgb(176, 176, 176);
+      color: #070606;
       display: flex;
       justify-content: center;
       align-items: center;
     }
     .buttons a:hover {
         transition: 0.5s;
-        box-shadow: 0 7px 15px rgba(177, 177, 177, 1.5);
+        box-shadow: 0 7px 15px rgba(225, 225, 225, 1.5);
         transform: scale(1.1);
         overflow: hidden;
       backdrop-filter: blur(12px);
@@ -315,15 +315,15 @@ export default {
         width: 100%;
         height: 100%;
         text-align: center;
-        background-color: rgb(196, 195, 195);
-        border: 2px solid rgb(5, 5, 5);
+        background-color: #fff;
+        border: 2px solid #070606;
         transition: transform 0.2s;
     }
     
     .cards:hover {
-        background: rgb(196, 195, 195);
+        background: #fff;
         transition: 0.5s;
-        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.7);
+        box-shadow: 0 20px 30px rgba(7, 6, 6, 0.7);
         transform: scale(1.1);
         overflow: hidden;
     }
@@ -336,7 +336,7 @@ export default {
         /* gap: 5px; */
         height: 100%;
         width: 9150rem;
-        border: 2px solid rgb(179, 1, 1);
+        border: 2px solid #D41028;
         z-index: 999;
         position: absolute;
         top: 0;
@@ -354,12 +354,12 @@ export default {
       width: 100%;
       z-index: 2;
       transition: 0.5s;
-      color: rgb(196, 195, 195);
+      color: #fff;
   }
   .cards:hover {
-        background: rgb(196, 195, 195);
+        background: #fff;
         transition: 0.5s;
-        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.7);
+        box-shadow: 0 20px 30px rgba(7, 6, 6, 0.7);
         transform: scale(1.0);
         overflow: hidden;
     }

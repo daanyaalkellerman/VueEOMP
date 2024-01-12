@@ -4,7 +4,7 @@
         <div class="container-fluid p-0 mx-3" id="navcon">
           <span class="navbar-brand mb-0 h1"
             ><img
-              src="https://iili.io/J7bJcRS.png"
+              src="https://iili.io/JYdFufV.png"
               alt="kk"
           /></span>
           <button
@@ -19,7 +19,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="offcanvas offcanvas-top"
+            class="offcanvas offcanvas-end"
             tabindex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
@@ -78,35 +78,37 @@ export default {
 </script>
 <style>
 #nav {
-  background-color: rgb(5, 5, 5);
-  color: rgb(196, 195, 195);
+  background-color: #070606;
+  color: #fff;
   font-size: medium;
   overflow-x: hidden;
 }
 .offcanvas{
-    height: 50%;
+    height: 100%;
+ 
+  
 }
 
 #offcanvas {
-  background-color: rgb(5, 5, 5);
+  background-color: #070606;
   color: #D41028;
 }
 #offcanvasNavbar {
   background-color: #D41028;
-  color: rgb(5, 5, 5);
+  color: #070606;
 }
 #burger {
-  background-color: rgb(5, 5, 5);
+  background-color: #070606;
 }
 
 #but {
   background-color: #B82D24;
-  color: rgb(5, 5, 5);
+  color: #070606;
 }
 #but:hover {
   background-color: #B82D24;
   border: 1px solid;
-  border-color: rgb(255, 255, 255);
+  border-color: #fff;
 }
 #navcon span [alt="kk"] {
   width: 100px;
@@ -115,16 +117,16 @@ export default {
 .icons a {
   padding: 0;
   font-size: 20px;
-  color: rgb(196, 195, 195);
+  color: #fff;
 }
 
 .icons a:hover {
-  color: rgb(255, 0, 0);  
+  color: #D41028;  
 }
 
 .nav-item a{
   width: 10vw;
   height: 5vh;
-  text-align: center;
+  text-align: left;
 }
 </style>

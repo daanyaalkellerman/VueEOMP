@@ -1,9 +1,11 @@
 <template>
- 
-    <NavBar/>
-    <router-view/>
-    <SpinnerView/>
-    <FooterView/>
+
+
+   <NavBar/>
+   <router-view/>
+   <SpinnerView/>
+   <FooterView/>
+
 </template>
 <script>
   import NavBar from './components/NavBar.vue'
@@ -55,12 +57,11 @@ mounted(){
   box-sizing: border-box;
 }
 #app {
-  background-image: url('https://drive.google.com/uc?id=1CmC7CWPQMsKj0WGK1a5G9O9i4otIlZtk');
+  background-image: url('https://i.postimg.cc/9ffnXC9m/red-ae-1.jpg');
   background-size: cover;
   background-position: center;
   overflow-x: hidden;
-  overflow-y: hidden;
-  
+ 
 }
 
 
@@ -69,27 +70,4 @@ nav a.router-link-exact-active {
   color: #D41028;
 }
 
-.footic{
-      color: white;
-    }
-    .footer{
-      position: absolute;
-      text-align: center;
-      background-color: black;
-
-    }
-footer{
-    justify-content: space-between !important;
-}
-
-.footer-bar {
-    margin: 0px;
-    justify-content: space-around;
-}
-.footinfo {
-    text-align: left;
-}
-.icon{
-  color: #D41028;
-}
 </style>
