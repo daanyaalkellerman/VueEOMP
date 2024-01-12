@@ -94,9 +94,11 @@ export default {
       text-decoration: none !important;
       color: #D41028 !important;
     }
+
     input::placeholder{
       color: #D41028;
     }
+
     textarea::placeholder{
       color: #D41028;
     }
@@ -125,4 +127,5 @@ export default {
        
     }
     }
+    /* end of css */
 </style>
