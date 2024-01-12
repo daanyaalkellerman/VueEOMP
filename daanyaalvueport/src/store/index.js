@@ -3,6 +3,7 @@ import axios from 'axios'
 
 export default createStore({
   state: {
+    //state array
     home: "",
     about: "",
     resume: [],
