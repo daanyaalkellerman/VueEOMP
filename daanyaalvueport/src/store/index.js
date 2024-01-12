@@ -14,7 +14,7 @@ export default createStore({
 
   },
   getters: {
-
+//dont need getters for this one
   },
   mutations: {
     //sets the state array
