@@ -42,14 +42,12 @@
    </div>
    <br><br>
    <section id="forthSec">
-      <h1 class="skills text-uppercase fw-bold-semi">Skills</h1>
-        <div class="container-lg mt-4">
-          <div class="row mt-5 content" v-for="skill in $store.state.skills" :key="skill">
-            <div class="skilly col-md-4">
-              <img :src=skill.skill alt=""/>
-            </div>
+    <h1 class="skills text-uppercase">Skills</h1>
+          <div class="container-fluid theSk my-5 " >
+              <div class="skilly" v-for="skill in $store.state.skills" :key="skill">
+                <img :src=skill.skill alt=""/>
+              </div>
           </div>
-        </div>
       </section>
 
 </template>
@@ -60,6 +58,12 @@ export default {
 
 </script>
 <style scoped>
+.theSk{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .thirdSec img {
   width: 100px;
   height: 100px;

@@ -13,11 +13,11 @@
               distributing the knowledge that i learn along my journey. I tend
               to make those around me more comfortable to better their mindset,
               lessen stress within the work environment and to strengthen our
-              bonds.<br />
+              bonds.
               When it comes to doing things under pressure i always think of
               that one bruce lee quote "flow like water" so i go with the flow
               whilst still maintaining my drive towards the unreachable goal
-              that is Perfection. <br />
+              that is Perfection.
               I spend most of my time skating to be more active, gyming to
               better my physical health, playing games to meet new people and
               spending quality time with my family.</p>
