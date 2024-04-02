@@ -1,23 +1,19 @@
 <template lang="">
   
-      <section class="about container-md text-uppercase fw-bold-semi"  id="About">
+      <section class="about container-md fw-bold-semi"  id="About">
     <div class="pic">
       <div class="animation"></div>
       <img src="https://iili.io/J76IyLg.md.jpg" class="aboutpic">
     </div>
       
       <div>
-              <h2 class="aboutH" style=" text-shadow: 2px 1px 1px #070606;">About Me</h2>
-              <p>HEY!! I'm Daanyaal Kellerman. I'm an aspiring Fullstack Web
-              Developer. I enjoy bringing out the creative talent of other's and
-              distributing the knowledge that i learn along my journey. I tend
+              <h2 class="aboutH text-uppercase" style=" text-shadow: 2px 1px 1px #070606;">About Me</h2>
+              <p>HEY!! I'm <span style="color:#D41028">Daanyaal Kellerman. Born 19/02/2001.</span> I'm an aspiring <span style="color:#D41028">Web
+              Developer.</span> I enjoy bringing out the creative talent of other's and
+              distributing the knowledge that I learn along my journey. I tend
               to make those around me more comfortable to better their mindset,
               lessen stress within the work environment and to strengthen our
               bonds.
-              When it comes to doing things under pressure i always think of
-              that one bruce lee quote "flow like water" so i go with the flow
-              whilst still maintaining my drive towards the unreachable goal
-              that is Perfection.
               I spend most of my time skating to be more active, gyming to
               better my physical health, playing games to meet new people and
               spending quality time with my family.</p>
@@ -143,9 +139,15 @@ overflow: hidden;
             }
 
           }
-          @media screen and (width <= 1440px) {
+          @media (max-width:480px){
+            .pic{
+              min-width:300px;
+              height: 300px;
+            }
+          }
+          @media (width <= 1440px) {
             .about{
-        margin-bottom: 23.5%;
+        margin-bottom: 20.5%;
 
     }
           }

@@ -27,7 +27,7 @@
             </form>
     
             <div class="deta justify-content-around">
-              <a href="mailto:kellermandaanyaal2@gmail.com" class="my-3 mail" mail><i class="fa fa-envelope"></i>kellermandaanyaal2@gmail.com</a>
+              <a href="mailto: kellermandaanyaal2@gmail.com" class="my-3 mail" mail><i class="fa fa-envelope"></i>kellermandaanyaal2@gmail.com</a>
               <text class="my-3"><i class="fa fa-phone"></i> +27 68 007 1963</text>
             </div>
             
@@ -71,7 +71,8 @@ export default {
         justify-content: center;
         text-align: center;
         align-items: center;
-        width: 100%;
+        width: 150px;
+        margin-left: 485px;
        
     }
     .subby:hover{
@@ -81,7 +82,7 @@ export default {
       border-radius: 0px;
     }
     .contact{
-        text-align: left;
+        text-align: center;
       color: #D41028;
 
     }
@@ -102,8 +103,31 @@ export default {
     textarea::placeholder{
       color: #D41028;
     }
-
-    @media screen and (width <600px){
+    @media (width:425px){
+      .subby{
+        margin: 0px;
+       margin-left:125px; 
+      }
+    }
+    @media (width:375px){
+      .subby{
+        margin:0px;
+        margin-left:100px;
+      }
+    }
+    @media (width:320px){
+      .subby{
+        margin:0px;
+        margin-left:75px;
+      }
+    }
+    @media (width:768px) {
+      .subby{
+        margin:0px;
+        margin-left: 300px;
+      }
+    }
+    @media (width <600px){
         .contact{
             margin-top: 20%;
         }

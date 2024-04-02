@@ -15,8 +15,6 @@
         <div id="rightTop" class="corner"></div>
         <div id="leftBottom" class="corner"></div>
         </div>
-        <span id="rightArrow" class="arrow"></span>
-        <span id="leftArrow" class="arrow"></span>
   </button>
 </router-link>
       <a href="https://drive.google.com/file/d/1HrBFFPRAMOTLIYn-Iiy9-CgwVAnozal0/view?usp=drive_link" target="_blank"> <button class="button">Download CV
@@ -26,8 +24,6 @@
         <div id="rightTop" class="corner"></div>
         <div id="leftBottom" class="corner"></div>
         </div>
-        <span id="rightArrow" class="arrow"></span>
-        <span id="leftArrow" class="arrow"></span>
       </button></a>
      
     </div>

@@ -17,81 +17,7 @@
              </div>
            </div>
          </div>
-         <!-- <div class="card-2">
-           <div class="cards cee">
-             <div class="imageProj">
-               <img :src=$store.state.projects[1].image />
-             </div>
-             <div class="card-body mine">
-               <h2>{{$store.state.projects[1].name}}</h2>
-               <p>{{$store.state.projects[1].description}}</p>
-               <div class="buttons">
-                 <a href="https://github.com/daanyaalkellerman/RWC.git" target="_blank"><i class="fa fa-github"></i></a>
-                 <a href="https://rugbywc.netlify.app/" target="_blank"><i class="fa fa-link"></i></a>
-               </div>
-             </div>
-           </div>
-         </div>
-         <div class="card-3">
-           <div class="cards cee">
-             <div class="imageProj">
-               <img :src=$store.state.projects[2].image />
-             </div>
-             <div class="card-body mine">
-               <h2>{{$store.state.projects[2].name}}</h2>
-               <p>{{$store.state.projects[2].description}}</p>
-               <div class="buttons">
-                 <a href="https://github.com/daanyaalkellerman/calculator.git" target="_blank"><i class="fa fa-github"></i></a>
-                 <a href="https://callmelator.netlify.app/" target="_blank"><i class="fa fa-link"></i></a>
-               </div>
-             </div>
-           </div>
-         </div>
-         <div class="card-4">
-           <div class="cards cee">
-             <div class="imageProj">
-               <img :src=$store.state.projects[3].image />
-             </div>
-             <div class="card-body mine">
-               <h2>{{$store.state.projects[3].name}}</h2>
-               <p>{{$store.state.projects[3].description}}</p>
-               <div class="buttons">
-                 <a href="https://github.com/daanyaalkellerman/e-commerce.git" target="_blank"><i class="fa fa-github"></i></a>
-                 <a href="https://animooshies.netlify.app/" target="_blank"><i class="fa fa-link"></i></a>
-               </div>
-             </div>
-           </div>
-         </div>
-          <div class="card-5">
-           <div class="cards cee">
-             <div class="imageProj">
-               <img :src=$store.state.projects[4].image />
-             </div>
-             <div class="card-body mine">
-               <h2>{{$store.state.projects[4].name}}</h2>
-               <p>{{$store.state.projects[4].description}}</p>
-               <div class="buttons">
-                 <a href="" target="_blank"> <i class="fa fa-github"></i></a>
-                 <a href="https://justflix.netlify.app/" target="_blank"><i class="fa fa-link"></i></a>
-               </div>
-             </div>
-           </div>
-          </div>
-          <div class="card-6">
-           <div class="cards cee">
-             <div class="imageProj">
-               <img :src=$store.state.projects[5].image />
-             </div>
-             <div class="card-body mine">
-               <h2>{{$store.state.projects[5].name}}</h2>
-               <p>{{$store.state.projects[5].description}}</p>
-               <div class="buttons">
-                 <a href="https://github.com/daanyaalkellerman/Urban-Kicks.git" target="_blank"><i class="fa fa-github"></i></a>
-                 <a href="https://urbnkicks.netlify.app/" target="_blank"><i class="fa fa-link"></i></a>
-               </div>
-             </div>
-           </div>
-         </div> -->
+
      </div>
      </section>
   <div v-else>
@@ -109,10 +35,11 @@ export default {
   color: #070606;
 }
     .projsect{
+      padding-top: 80px;
       text-align: center;
-      top: 70px;
       position: relative;
-      height: 100vh;
+      min-height: 100vh;
+      overflow-y: hidden;
     }
 
 .projh2 {

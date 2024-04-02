@@ -79,9 +79,9 @@ export default {
 <style>
 #nav {
   background-color: #070606;
-  color: #fff;
   font-size: medium;
   overflow-x: hidden;
+  
 }
 .offcanvas{
     height: 100%;
@@ -113,6 +113,12 @@ export default {
 #navcon span [alt="kk"] {
   width: 100px;
   height: 50px;
+}
+@media(max-width:425px){
+  #navcon span [alt="kk"] {
+  width: auto;
+  height: 35px;
+}
 }
 .icons a {
   padding: 0;
