@@ -1,6 +1,6 @@
 <template lang="">
   <div class="testimonials">
-    <h1 class="text-uppercase fw-bold-semi">Testimonials</h1>
+    <h1 class="testheader text-uppercase fw-bold-semi">Testimonials</h1>
     <section class="testimon container" v-if="$store.state.testimonials.length > 0">
         <div class="card row" v-for="testimonial in $store.state.testimonials" :key="testimonial">
           <div class="poster">
@@ -28,6 +28,9 @@ export default {
 }
 </script>
 <style scoped>
+.testheader{
+  font-size: 50px;
+}
 .testimonials{
   text-align: center;
   position: relative;
@@ -57,8 +60,8 @@ height: 100vh;
 .card {
   flex-direction: column;
   position: relative;
-  width: 300px;
-  height: 280px;
+  width: 260px;
+  height: 240px;
   background: #070606;
   border: 5px double #D41028;
   border-radius: 0px;

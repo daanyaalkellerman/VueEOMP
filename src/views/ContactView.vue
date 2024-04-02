@@ -52,7 +52,7 @@ export default {
     
     .contactsection{
       min-height: 80vh;
-      margin-top: 10%;
+      margin-top: 8%;
 
     }
     .form-control{

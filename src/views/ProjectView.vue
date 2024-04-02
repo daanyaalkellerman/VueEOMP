@@ -1,6 +1,6 @@
 <template lang="">
     <section class="projsect " v-if="$store.state.projects.length > 0">
-       <h1 class="projh2 text-uppercase fw-bold-semi">My Projects</h1>
+       <h1 class="projh2 text-uppercase fw-bold-semi">Projects</h1>
      <div class="projgrid" >
          <div class="card-2" v-for="project in $store.state.projects" :key="project">
            <div class="cards cee">
@@ -46,7 +46,8 @@ export default {
     margin-bottom:1.8%;
     color: #D41028;
     text-shadow: 2px 1px 1px #070606;
-    font-size: 50px;
+    font-size: 60px;
+    
 }
 #proj {
   margin: 0px;

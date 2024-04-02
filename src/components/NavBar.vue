@@ -78,7 +78,7 @@ export default {
 </script>
 <style>
 #nav {
-  background-color: #070606;
+  background-color: #000;
   font-size: medium;
   overflow-x: hidden;
   
@@ -90,20 +90,20 @@ export default {
 }
 
 #offcanvas {
-  background-color: #070606;
+  background-color: #000;
   color: #D41028;
 }
 #offcanvasNavbar {
   background-color: #D41028;
-  color: #070606;
+  color: #000;
 }
 #burger {
-  background-color: #070606;
+  background-color: #000;
 }
 
 #but {
   background-color: #B82D24;
-  color: #070606;
+  color: #000;
 }
 #but:hover {
   background-color: #B82D24;

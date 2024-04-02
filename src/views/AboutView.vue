@@ -7,7 +7,7 @@
     </div>
       
       <div>
-              <h2 class="aboutH text-uppercase" style=" text-shadow: 2px 1px 1px #070606;">About Me</h2>
+              <h1 class="aboutH text-uppercase" style=" text-shadow: 2px 1px 1px #070606;">About Me</h1>
               <p>HEY!! I'm <span style="color:#D41028">Daanyaal Kellerman. Born 19/02/2001.</span> I'm an aspiring <span style="color:#D41028">Web
               Developer.</span> I enjoy bringing out the creative talent of other's and
               distributing the knowledge that I learn along my journey. I tend
@@ -84,7 +84,7 @@ overflow: hidden;
     inset: 7px;
     background: #070606;
 }
-.about h2{
+.about h1{
             color: #D41028;
             font-weight: 900;
             font-size: 6vh;
