@@ -69,5 +69,13 @@ mounted(){
 nav a.router-link-exact-active {
   color: #D41028;
 }
+html::-webkit-scrollbar{
+  display:none;
+  margin-top:130px;
+}
+html{
+  -ms-overflow-style: none;
+  scrollbar-width:none
+}
 
 </style>

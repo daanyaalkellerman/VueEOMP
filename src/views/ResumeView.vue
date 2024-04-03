@@ -14,32 +14,18 @@
             </p>
           </div>
         </div>
-        <!-- <div> -->
-          <!-- <div class="col-12 my-3">
-            <img class="logo" :src=$store.state.resume[2].logo>
-          </div>
-          <div class="col words mx-3">
-            <h4>{{$store.state.resume[2].year}}</h4>
-            <h2>{{$store.state.resume[2].place}}</h2>
-            <p>
-            {{$store.state.resume[2].description}}
-            </p>
-          </div>
-        </div>
-        <div>
-          <div class="col-12 my-3">
-            <img class="logo" :src=$store.state.resume[3].logo>
-          </div>
-          <div class="col words mx-3">
-            <h4>{{$store.state.resume[3].year}}</h4>
-            <h2>{{$store.state.resume[3].place}}</h2>
-            <p>
-            {{$store.state.resume[3].description}}
-            </p>
-          </div>
-        </div> -->
       </section>
    </div>
+   <div class="resume work">
+   <h1 class=" resumeW text-uppercase fw-bold-semi" >Work Experience</h1>
+   <section class="thirdSec">
+    <div class="col words mx-2">
+      <h4>September 2023 - Present Day</h4>
+      <h2>Life Choices Coding Academy</h2>
+      <p class="container">Intern</p>
+    </div>
+   </section>
+  </div>
    <br><br>
    <section id="forthSec">
     <h1 class="skills text-uppercase">Skills</h1>
@@ -58,11 +44,15 @@ export default {
 
 </script>
 <style scoped>
+
 .theSk{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+.work{
+  margin-top:5%;
 }
 .thirdSec img {
   width: 100px;
@@ -96,6 +86,12 @@ export default {
 .words p{
   color: #fff;
   margin-bottom: 20px;
+}
+.resumeW{
+  text-align:center;
+  color:#D41028;
+  font-size:60px;
+  text-shadow: 2px 1px 1px #070606;
 }
 .resumeH{
   text-align: center;
@@ -142,6 +138,9 @@ img {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+.resumeW{
+  font-size: 50px
 }
 }
 /* end of css */

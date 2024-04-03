@@ -234,7 +234,7 @@ button {
 
 @media (width: 1024px) {
   img{
-  width: 25%;
+  width: 200px;
   margin-top: 80px;
   border: 5px double #D41028;
 }
@@ -260,8 +260,8 @@ button {
 }
 button {
   position: relative;
-  width: 11em;
-  height: 5em;
+  width: 9em;
+  height: 4em;
   outline: none;
   transition: 0.1s;
   background-color: transparent;
