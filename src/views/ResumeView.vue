@@ -9,7 +9,7 @@
           <div class="col words mx-3">
             <h4>{{resum.year}}</h4>
             <h2>{{resum.place}}</h2>
-            <p>
+            <p class="container">
            {{resum.description}}
             </p>
           </div>

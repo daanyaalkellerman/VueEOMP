@@ -9,7 +9,7 @@
       <div>
               <h1 class="aboutH text-uppercase" style=" text-shadow: 2px 1px 1px #070606;">About Me</h1>
               <p>HEY!! I'm <span style="color:#D41028">Daanyaal Kellerman. Born 19/02/2001.</span> I'm an aspiring <span style="color:#D41028">Web
-              Developer.</span> I enjoy bringing out the creative talent of other's and
+              Developer.</span> My preferred languages are <span style="color:#D41028">English and Afrikaans.</span> I enjoy bringing out the creative talent of other's and
               distributing the knowledge that I learn along my journey. I tend
               to make those around me more comfortable to better their mindset,
               lessen stress within the work environment and to strengthen our
