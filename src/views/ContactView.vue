@@ -150,6 +150,11 @@ export default {
        
        
     }
+  }
+  @media (width:1024px){
+    .subby{
+      margin-left: 385px
     }
+  }
     /* end of css */
 </style>

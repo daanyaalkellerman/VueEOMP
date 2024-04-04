@@ -120,8 +120,8 @@ height: 100vh;
   .card {
   flex-direction: column;
   position: relative;
-  width: 300px;
-  height: 280px;
+  width: 200px;
+  height: 180px;
   background: #070606;
   border: 5px double #D41028;
   border-radius: 0px;
@@ -140,7 +140,7 @@ height: 100vh;
 .card .poster::before {
     content: "";
     position: absolute;
-    bottom: -100px;
+    bottom: -200px;
     width: 100%;
     height: 100%;
     background: linear-gradient(0deg #070606 20%, transparent);
@@ -149,7 +149,7 @@ height: 100vh;
 }
 .card .details {
     position: absolute;
-    bottom: -140px;
+    bottom: -800px;
     left: 0;
     width: 100%;
     z-index: 2;
@@ -157,15 +157,24 @@ height: 100vh;
     color: #B82D24;
     text-shadow: 3px 1px 1px #070606;
 }
-
-.card:hover .details {
-    bottom: 60px;
+.testname{
+  font-size:19px;
 }
+.testname1{
+  font-size:23px;
+}
+.card:hover .details {
+    bottom:10px;
+}
+.info{
+  font-size:10px;
+}
+
 .testimon{
-  height: 20%;
+  height: 10%;
 }
 .testimonials{
-  height:200vh
+  height:100%;
 }
 }
 @media (min-width:1024px) and (max-width:1440px){
