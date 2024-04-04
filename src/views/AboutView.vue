@@ -157,7 +157,7 @@ overflow: hidden;
                 height:314px;
               }
               #About{
-        height:100vh;
+        height:110vh;
     }
     .about{
       margin-bottom:0px;
