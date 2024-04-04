@@ -58,6 +58,7 @@ overflow: hidden;
 
 }
 
+
 .pic .animation::before{
     content: '';
     position: absolute;
@@ -157,7 +158,7 @@ overflow: hidden;
                 height:314px;
               }
               #About{
-        height:110vh;
+        min-height:150vh;
     }
     .about{
       margin-bottom:0px;

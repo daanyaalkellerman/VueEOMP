@@ -73,7 +73,7 @@ height: 100vh;
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 .card .poster::before {
     content: "";
@@ -177,11 +177,23 @@ height: 100vh;
   height:100%;
 }
 }
+@media (width:768px){
+  .card{
+    width:350px;
+    height:295px
+  }
+}
 @media (min-width:1024px) and (max-width:1440px){
   .testimonials{
     height:100vh;
   }
- 
+  .testimon{
+    margin-top:100px;
+  }
+ .card{
+  width:350px;
+  height:295px;
+ }
 }
 
 
