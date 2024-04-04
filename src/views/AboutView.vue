@@ -31,8 +31,8 @@ export default {
             display: flex;
             justify-content: flex-start;
             align-items: center;      
-            margin-top: 10%;
-            margin-bottom: 10%;
+            margin-top: 3%;
+            margin-bottom: 3%;
           }
   
         .aboutpic{
@@ -146,18 +146,14 @@ overflow: hidden;
               height: 300px;
             }
           }
-          @media (width <= 1440px) {
-            .about{
-        margin-bottom: 20.5%;
-
-    }
-          }
+        
 @media (min-width:1024px){
           .pic{
                 min-width: 310px;
                 height:314px;
               }
     .about{
+
       height:100vh;
     }
     .aboutpic{
