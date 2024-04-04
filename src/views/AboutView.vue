@@ -3,7 +3,7 @@
       <section class="about container-md fw-bold-semi"  id="About">
     <div class="pic">
       <div class="animation"></div>
-      <img src="https://iili.io/J76IyLg.md.jpg" class="aboutpic">
+      <img src="https://i.postimg.cc/mkZwtSbW/IMG-0039.jpg" class="aboutpic">
     </div>
       
       <div>
@@ -151,5 +151,22 @@ overflow: hidden;
 
     }
           }
+@media (min-width:1024px) and (max-width:1440px){
+          .pic{
+                min-width: 310px;
+                height:314px;
+              }
+              #About{
+        height:100vh;
+    }
+    .about{
+      margin-bottom:0px;
+      margin-top:0px;
 
+    }
+    .aboutpic{
+      width:300px;
+      height:300px;
+    }
+}
 </style>

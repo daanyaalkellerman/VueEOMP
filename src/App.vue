@@ -61,6 +61,7 @@ mounted(){
   background-size: cover;
   background-position: center;
   overflow-x: hidden;
+  height: auto;
   border-image: fill 1 linear-gradient(#000, rgba(0, 0, 0, 0.067));
 }
 

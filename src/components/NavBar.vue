@@ -79,7 +79,7 @@ export default {
 <style>
 #nav {
   background-color: #000;
-  font-size: medium;
+  font-size: 15px;
   overflow-x: hidden;
   
 }

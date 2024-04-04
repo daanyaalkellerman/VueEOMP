@@ -1,6 +1,6 @@
 <template>
   <div class="home" >
-    <img src="https://iili.io/J76IyLg.md.jpg" alt="">
+    <img src="https://i.postimg.cc/mkZwtSbW/IMG-0039.jpg" alt="">
     <div class="words">
       <h3 class="hello my-2">Hi My Name is</h3>
       <h1 class="name">Daanyaal Kellerman</h1>
@@ -286,5 +286,17 @@ button {
   height: 94.5vh;
 }
   
+}
+@media (min-width:1024px) and (max-width:1440px){
+  .home{
+    height:100vh;
+    top:-10px;
+  }
+  img{
+  width: 16vw;
+  margin-top: 80px;
+  border: 5px double #D41028;
+}
+
 }
 </style>

@@ -37,13 +37,14 @@ export default {
 height: 100vh;
 }
 .testimonials h1{
-  margin-top: 80px;
+  margin-top: 65px;
   color: #D41028;
   text-shadow: 2px 1px 1px #070606;
 }
 .testimon {
   display: flex;
-  gap: 3%;
+  gap: 10%;
+  height: 0%;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -115,16 +116,15 @@ height: 100vh;
   z-index: 1;
 }
 
-@media (width :320px) {
+@media (width<=425px) {
   .card {
   flex-direction: column;
   position: relative;
   width: 300px;
-  height: 250px;
+  height: 280px;
   background: #070606;
   border: 5px double #D41028;
   border-radius: 0px;
- 
   box-shadow: 0 15px 35px #B82D24;
 }
   .card .poster {
@@ -161,6 +161,18 @@ height: 100vh;
 .card:hover .details {
     bottom: 60px;
 }
+.testimon{
+  height: 20%;
+}
+.testimonials{
+  height:200vh
+}
+}
+@media (min-width:1024px) and (max-width:1440px){
+  .testimonials{
+    height:100vh;
+  }
+ 
 }
 
 
