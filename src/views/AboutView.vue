@@ -1,6 +1,6 @@
 <template lang="">
   
-      <section class="about container-md fw-bold-semi"  id="About">
+      <section class="about container fw-bold-semi"  id="About">
     <div class="pic">
       <div class="animation"></div>
       <img src="https://i.postimg.cc/mkZwtSbW/IMG-0039.jpg" class="aboutpic">
@@ -157,13 +157,10 @@ overflow: hidden;
                 min-width: 310px;
                 height:314px;
               }
-              #About{
-        min-height:150vh;
-    }
     .about{
       margin-bottom:0px;
       margin-top:0px;
-
+      height:100vh;
     }
     .aboutpic{
       width:300px;

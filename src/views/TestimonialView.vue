@@ -183,7 +183,7 @@ height: 100vh;
     height:295px
   }
 }
-@media (min-width:1024px) and (max-width:1440px){
+@media (min-width:1024px) and (max-width:1500px){
   .testimonials{
     height:100vh;
   }
