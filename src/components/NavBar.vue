@@ -53,7 +53,7 @@
                   <router-link to="/about" class="nav-link">About</router-link>
                 </li>
                 <li class="nav-item">
-                  <router-link to="/resume" class="nav-link">Resume</router-link>
+                  <router-link to="/resume" class="nav-link">Education&Experiences</router-link>
                 </li>
                 <li class="nav-item">
                   <router-link to="/testimonials" class="nav-link">Testimonials</router-link>
@@ -79,7 +79,7 @@ export default {
 <style>
 #nav {
   background-color: #000;
-  font-size: 15px;
+  font-size: 10px;
   overflow-x: hidden;
   
 }
@@ -131,7 +131,6 @@ export default {
 }
 
 .nav-item a{
-  width: 10vw;
   height: 5vh;
   text-align: left;
 }

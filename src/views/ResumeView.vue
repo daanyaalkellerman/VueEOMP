@@ -19,10 +19,11 @@
    <div class="resume work">
    <h1 class=" resumeW text-uppercase fw-bold-semi" >Experience</h1>
    <section class="">
-    <div class="col words mx-1">
-      <h4>2024</h4>
-      <h2>Life Choices Coding Academy</h2>
+    <div class="col words mt-3">
+      <h5>2024- PRESENT DAY</h5>
+      <h2>LC Studio</h2>
       <h4 class="container">Intern</h4>
+      <p>Assisting on client projects and part of the Web Development Learning Journey</p>
     </div>
    </section>
   </div>

@@ -152,14 +152,12 @@ overflow: hidden;
 
     }
           }
-@media (min-width:1024px) and (max-width:1440px){
+@media (min-width:1024px){
           .pic{
                 min-width: 310px;
                 height:314px;
               }
     .about{
-      margin-bottom:0px;
-      margin-top:0px;
       height:100vh;
     }
     .aboutpic{
