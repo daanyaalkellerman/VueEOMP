@@ -17,7 +17,7 @@
         </div>
   </button>
 </router-link>
-      <a href="https://drive.google.com/file/d/1HrBFFPRAMOTLIYn-Iiy9-CgwVAnozal0/view?usp=drive_link" target="_blank"> <button class="button">Download CV
+      <a href="https://docs.google.com/document/d/1w_jBOJsUt5BIOO7IKB1p11E-Q-a5vHi0f8Mrx4OLAS4/edit?usp=sharing" target="_blank"> <button class="button">Download CV
         <div id="box">
         <div id="leftTop" class="corner"></div>
         <div id="rightBottom" class="corner"></div>

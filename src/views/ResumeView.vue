@@ -1,6 +1,6 @@
 <template lang="">
    <div class="resume">
-     <h1 class="resumeH text-uppercase fw-bold-semi">Resume</h1>
+     <h1 class="resumeW text-uppercase fw-bold-semi">Education</h1>
     <section class="thirdSec row" id="resumee" >
         <div v-for="resum in $store.state.resume" :key="resum" >
           <div class="col-12 my-3">
@@ -17,18 +17,18 @@
       </section>
    </div>
    <div class="resume work">
-   <h1 class=" resumeW text-uppercase fw-bold-semi" >Work Experience</h1>
-   <section class="thirdSec">
-    <div class="col words mx-2">
-      <h4>September 2023 - Present Day</h4>
+   <h1 class=" resumeW text-uppercase fw-bold-semi" >Experience</h1>
+   <section class="">
+    <div class="col words mx-1">
+      <h4>2024</h4>
       <h2>Life Choices Coding Academy</h2>
-      <p class="container">Intern</p>
+      <h4 class="container">Intern</h4>
     </div>
    </section>
   </div>
    <br><br>
    <section id="forthSec">
-    <h1 class="skills text-uppercase">Skills</h1>
+    <h1 class="resumeW text-uppercase">Skills</h1>
           <div class="container-fluid theSk my-5 " >
               <div class="skilly" v-for="skill in $store.state.skills" :key="skill">
                 <img :src=skill.skill alt=""/>
@@ -45,6 +45,7 @@ export default {
 </script>
 <style scoped>
 
+
 .theSk{
   display: flex;
   justify-content: center;
@@ -53,6 +54,7 @@ export default {
 }
 .work{
   margin-top:5%;
+  margin-bottom: 3%;
 }
 .thirdSec img {
   width: 100px;
@@ -78,6 +80,15 @@ export default {
   color: #fff;
   margin-bottom: 20px;
 }
+.words h5{
+  font-size: 15px;
+  color: #d9d9d9;
+}
+.words h3{
+  color: #D41028;
+  font-size: 19px;
+}
+ 
 .words h2{
   color: #D41028;
   text-shadow: 2px 1px 1px #070606;
@@ -92,6 +103,7 @@ export default {
   color:#D41028;
   font-size:60px;
   text-shadow: 2px 1px 1px #070606;
+  margin-top:40px;
 }
 .resumeH{
   text-align: center;

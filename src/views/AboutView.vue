@@ -86,7 +86,7 @@ overflow: hidden;
 }
 .about h1{
             color: #D41028;
-            font-weight: 900;
+          
             font-size: 6vh;
             left: 0;
             line-height: 5rem;
