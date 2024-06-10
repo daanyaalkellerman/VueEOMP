@@ -3,7 +3,7 @@
       <section class="about container fw-bold-semi"  id="About">
     <div class="pic">
       <div class="animation"></div>
-      <img src="https://i.postimg.cc/mkZwtSbW/IMG-0039.jpg" class="aboutpic">
+      <img src="https://iili.io/Jy5DIEl.md.jpg" class="aboutpic">
     </div>
       
       <div>

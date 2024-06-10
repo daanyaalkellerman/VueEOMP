@@ -1,6 +1,6 @@
 <template>
   <div class="home" >
-    <img src="https://i.postimg.cc/mkZwtSbW/IMG-0039.jpg" alt="">
+    <img src="https://iili.io/Jy5DIEl.md.jpg" alt="">
     <div class="words">
       <h3 class="hello my-2">Hi My Name is</h3>
       <h1 class="name">Daanyaal Kellerman</h1>
